@@ -1,6 +1,6 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 10.00
-# Visual Studio 2008
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PortBridgeAgent", "PortBridgeAgent\PortBridgeAgent.csproj", "{1D83FB4F-796F-40B8-BDD1-4BF5CF83D5E6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Samples.ServiceBus.Connections", "Microsoft.Samples.ServiceBus.Connections\Microsoft.Samples.ServiceBus.Connections.csproj", "{70015950-78EB-4808-9645-1A04DCC2DAB8}"
