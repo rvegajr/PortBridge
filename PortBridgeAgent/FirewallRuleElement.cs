@@ -35,7 +35,6 @@ namespace PortBridgeAgent
         }
 
         [ConfigurationProperty(sourceRangeBeginString, IsRequired = false)]
-        [RegexStringValidator(@"^$|^([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$")]
         public string SourceRangeBegin
         {
             get
@@ -50,7 +49,6 @@ namespace PortBridgeAgent
 
 
         [ConfigurationProperty(sourceRangeEndString, IsRequired = false)]
-        [RegexStringValidator(@"^$|^([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$")]
         public string SourceRangeEnd
         {
             get
@@ -64,7 +62,6 @@ namespace PortBridgeAgent
         }
 
         [ConfigurationProperty(sourceString, IsRequired = false)]
-        [RegexStringValidator(@"^$|^([1-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])(\.([0-9]|[1-9][0-9]|1[0-9][0-9]|2[0-4][0-9]|25[0-5])){3}$")]
         public string Source
         {
             get
