@@ -102,6 +102,8 @@ namespace Microsoft.Samples.ServiceBus.Connections
 
         public bool OpenService()
         {
+            Trace.TraceInformation("Opening ServiceConnectionForwarder from {0} to {1}", endpointVia.ToString(),targetHost);
+
             this.streamServerHost = new StreamServerHost();
 
             var ep = streamServerHost.AddServiceEndpoint(typeof(IDataExchange), streamBinding, endpointRole, endpointVia);

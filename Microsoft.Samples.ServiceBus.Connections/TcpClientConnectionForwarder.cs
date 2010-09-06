@@ -86,6 +86,10 @@ namespace Microsoft.Samples.ServiceBus.Connections
                 {
                     bindToAddress = IPAddress.Any;
                 }
+
+                Trace.TraceInformation("TcpClientConnectionForwarder listening on {0} port {1}, forwarding via {2} ",
+                    bindToAddress.ToString(), fromPort, endpointVia.ToString());
+
                 this.tcpListener = new TcpListener(bindToAddress, fromPort);
                 
                 this.tcpListener.Start();
@@ -133,6 +137,9 @@ namespace Microsoft.Samples.ServiceBus.Connections
                     {
                         bool endpointInPermittedRange = false;
                         IPEndPoint remoteIPEndpoint = (IPEndPoint)tcpConnection.Client.RemoteEndPoint;
+
+                        Trace.TraceInformation("TCP Connection from {0}", remoteIPEndpoint.Address.ToString());
+
                         foreach (IPRange range in firewallRules)
                         {
                             if (range.IsInRange(remoteIPEndpoint.Address))
