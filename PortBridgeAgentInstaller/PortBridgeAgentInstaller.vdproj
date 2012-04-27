@@ -21,38 +21,38 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_9995D6EC7F11EE7281BD795AB3778CA3"
-        "OwnerKey" = "8:_FA91B0BBF30FDA15620B464C4DA57D7A"
-        "MsmSig" = "8:_UNDEFINED"
-        }
-        "Entry"
-        {
-        "MsmKey" = "8:_9995D6EC7F11EE7281BD795AB3778CA3"
+        "MsmKey" = "8:_B0B660B17846CB3ECE491F715C3A3C2F"
         "OwnerKey" = "8:_854F2E5825FF4F4AA1D8CDA1490B9297"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_FA91B0BBF30FDA15620B464C4DA57D7A"
-        "OwnerKey" = "8:_854F2E5825FF4F4AA1D8CDA1490B9297"
+        "MsmKey" = "8:_DA0828FFC3002BC4D93D44462C39317C"
+        "OwnerKey" = "8:_B0B660B17846CB3ECE491F715C3A3C2F"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
+        "MsmKey" = "8:_DA0828FFC3002BC4D93D44462C39317C"
         "OwnerKey" = "8:_854F2E5825FF4F4AA1D8CDA1490B9297"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_FA91B0BBF30FDA15620B464C4DA57D7A"
+        "OwnerKey" = "8:_854F2E5825FF4F4AA1D8CDA1490B9297"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
         {
         "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_9995D6EC7F11EE7281BD795AB3778CA3"
+        "OwnerKey" = "8:_B0B660B17846CB3ECE491F715C3A3C2F"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_DA0828FFC3002BC4D93D44462C39317C"
         "MsmSig" = "8:_UNDEFINED"
         }
     }
@@ -82,10 +82,10 @@
             "ComponentsUrl" = "8:"
                 "Items"
                 {
-                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Net.Framework.3.5.SP1"
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0"
                     {
-                    "Name" = "8:.NET Framework 3.5 SP1"
-                    "ProductCode" = "8:Microsoft.Net.Framework.3.5.SP1"
+                    "Name" = "8:Microsoft .NET Framework 4 (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0"
                     }
                     "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
                     {
@@ -117,6 +117,19 @@
             "PrerequisitesLocation" = "2:1"
             "Url" = "8:"
             "ComponentsUrl" = "8:"
+                "Items"
+                {
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:.NETFramework,Version=v4.0,Profile=Client"
+                    {
+                    "Name" = "8:Microsoft .NET Framework 4 Client Profile (x86 and x64)"
+                    "ProductCode" = "8:.NETFramework,Version=v4.0,Profile=Client"
+                    }
+                    "{EDC2488A-8267-493A-A98E-7D9C3B36CDF3}:Microsoft.Windows.Installer.3.1"
+                    {
+                    "Name" = "8:Windows Installer 3.1"
+                    "ProductCode" = "8:Microsoft.Windows.Installer.3.1"
+                    }
+                }
             }
         }
     }
@@ -195,7 +208,7 @@
                 {
                 "Name" = "8:.NET Framework"
                 "Message" = "8:[VSDNETMSG]"
-                "Version" = "8:3.5.30729"
+                "FrameworkVersion" = "8:.NETFramework,Version=v4.0"
                 "AllowLaterVersions" = "11:FALSE"
                 "InstallUrl" = "8:http://go.microsoft.com/fwlink/?LinkId=76617"
                 }
@@ -203,20 +216,20 @@
         }
         "File"
         {
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_9995D6EC7F11EE7281BD795AB3778CA3"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_B0B660B17846CB3ECE491F715C3A3C2F"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.ServiceBus, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Microsoft.Samples.ServiceBus.Connections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_9995D6EC7F11EE7281BD795AB3778CA3"
+                    "_B0B660B17846CB3ECE491F715C3A3C2F"
                     {
-                    "Name" = "8:Microsoft.ServiceBus.dll"
+                    "Name" = "8:Microsoft.Samples.ServiceBus.Connections.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Microsoft.ServiceBus.dll"
+            "SourcePath" = "8:Microsoft.Samples.ServiceBus.Connections.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4CA0FB1FA01C49B5AE41C9F143476CFA"
@@ -234,20 +247,20 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
-            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_FA91B0BBF30FDA15620B464C4DA57D7A"
+            "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_DA0828FFC3002BC4D93D44462C39317C"
             {
             "AssemblyRegister" = "3:1"
             "AssemblyIsInGAC" = "11:FALSE"
-            "AssemblyAsmDisplayName" = "8:Microsoft.Samples.ServiceBus.Connections, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL"
+            "AssemblyAsmDisplayName" = "8:Microsoft.ServiceBus, Version=1.6.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL"
                 "ScatterAssemblies"
                 {
-                    "_FA91B0BBF30FDA15620B464C4DA57D7A"
+                    "_DA0828FFC3002BC4D93D44462C39317C"
                     {
-                    "Name" = "8:Microsoft.Samples.ServiceBus.Connections.dll"
+                    "Name" = "8:Microsoft.ServiceBus.dll"
                     "Attributes" = "3:512"
                     }
                 }
-            "SourcePath" = "8:Microsoft.Samples.ServiceBus.Connections.dll"
+            "SourcePath" = "8:Microsoft.ServiceBus.dll"
             "TargetName" = "8:"
             "Tag" = "8:"
             "Folder" = "8:_4CA0FB1FA01C49B5AE41C9F143476CFA"
@@ -322,8 +335,9 @@
         "Name" = "8:Microsoft Visual Studio"
         "ProductName" = "8:PortBridgeAgent"
         "ProductCode" = "8:{B0CA39D8-86EF-4754-BF4E-A9A4743BA661}"
-        "PackageCode" = "8:{CCA40519-7155-41F6-B8D3-854B323E5BEC}"
+        "PackageCode" = "8:{E5D0CE23-0187-477F-B0E5-70A90A07848A}"
         "UpgradeCode" = "8:{F60F2DE2-B180-478A-AEE0-229A6DB9C61E}"
+        "AspNetVersion" = "8:4.0.30319.0"
         "RestartWWWService" = "11:FALSE"
         "RemovePreviousVersions" = "11:FALSE"
         "DetectNewerInstalledVersion" = "11:TRUE"
