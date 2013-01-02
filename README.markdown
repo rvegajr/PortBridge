@@ -28,7 +28,7 @@ The service's exe file is "PortBridge.exe" and is both a console app and a Windo
 The app.config file on the Service Side (PortBridge/app.config, PortBridge.exe.config in the binaries folder) specifies what ports or named pipes you want to project into Service Bus:   
    
 
-`
+```XML
   <portBridge serviceBusNamespace="mynamespace"  
 			  serviceBusIssuerName="owner"  
 			  serviceBusIssuerSecret="xxxxxxxx"  
@@ -37,7 +37,7 @@ The app.config file on the Service Side (PortBridge/app.config, PortBridge.exe.c
       <add targetHost="localhost" allowedPorts="3389" />  
     </hostMappings>  
   </portBridge>    
-`
+````
   
 The `serviceBusNamespace` attribute takes your Service Bus namespace name, and the `serviceBusIssuerSecret` the respective secret. The serviceBusIssuerName should remain "owner" unless you know why you want to change it. If you don't have an Azure account you might not understand what I'm writing about: [Go make one](http://www.windowsazure.com/).  
 
@@ -58,7 +58,7 @@ New host mappings are added with the add element. You can add any host that the 
 The agent's exe file is "PortBridgeAgent.exe" and is also both a console app and a Windows Service.   
 
 The app.config file on the Agent side (PortBridgeAgent/app.config, PortBridgeAgent.exe.config in the binaries folder) specifies which ports or pipes you want to project into the Agent machine and whether and how you want to firewall these ports. The firewall rules here are not interacting with your local firewall. This is an additional layer of protection.  
-`
+```XML
   <portBridgeAgent serviceBusNamespace="mysolution"  
 				   serviceBusIssuerName="owner"  
 				   serviceBusIssuerSecret="xxxxxxxx">  
@@ -71,7 +71,7 @@ The app.config file on the Agent side (PortBridgeAgent/app.config, PortBridgeAge
       </port>  
     </portMappings>  
   </portBridgeAgent>  
-`  
+```  
 Again, the `serviceBusNamespace` attribute takes your Service Bus namespace name, and the `serviceBusIssuerSecret` the respective secret.   
 
 The `portMappings` collection holds the individual ports or pipes you want to bring onto the local machine. Shown above is a mapping of Remote Desktop (port 3389 on the machine with the computer name or localHostName 'mymachine') to the local port 13389. Once Service and Agent are running, you can connect to the agent machine on port 13389 using the Remote Desktop client - with PortBridge mapping that to port 3389 on the remote box.   
