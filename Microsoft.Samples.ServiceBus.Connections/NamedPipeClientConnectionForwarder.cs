@@ -46,10 +46,10 @@ namespace Microsoft.Samples.ServiceBus.Connections
             this.endpointVia = ServiceBusEnvironment.CreateServiceUri("sb", serviceNamespace, string.Format("/PortBridge/{0}", targetHost));
             this.streamBinding = CreateClientBinding(useHybrid);
 
-            this.relayCreds = new TransportClientEndpointBehavior();
+            /*this.relayCreds = new TransportClientEndpointBehavior();
             this.relayCreds.CredentialType = TransportClientCredentialType.SharedSecret;
             this.relayCreds.Credentials.SharedSecret.IssuerName = issuerName;
-            this.relayCreds.Credentials.SharedSecret.IssuerSecret = issuerSecret;
+            this.relayCreds.Credentials.SharedSecret.IssuerSecret = issuerSecret;*/
         }
 
         public void Dispose()

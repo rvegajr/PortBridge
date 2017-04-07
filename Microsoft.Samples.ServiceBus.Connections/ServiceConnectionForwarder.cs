@@ -94,10 +94,10 @@ namespace Microsoft.Samples.ServiceBus.Connections
             streamBinding.MaxReceivedMessageSize = 1024 * 1024;
             streamBinding.ConnectionMode = useHybrid ? TcpRelayConnectionMode.Hybrid : TcpRelayConnectionMode.Relayed;
 
-            relayCreds = new TransportClientEndpointBehavior();
+            /*relayCreds = new TransportClientEndpointBehavior();
             relayCreds.CredentialType = TransportClientCredentialType.SharedSecret;
             relayCreds.Credentials.SharedSecret.IssuerName = issuerName;
-            relayCreds.Credentials.SharedSecret.IssuerSecret = issuerSecret;
+            relayCreds.Credentials.SharedSecret.IssuerSecret = issuerSecret;*/
         }
 
         public bool OpenService()
